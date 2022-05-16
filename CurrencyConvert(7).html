@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="amount" placeholder="dollars">
+    <br><br>
+    <script>
+        function Inr() {
+            var dollars = document.getElementById("amount").value;
+            var inr = dollars / 77;
+            document.write(dollars + " dollars = " + inr + " INR");
+        }
+        
+        function Yen() {
+            var dollars = document.getElementById("amount").value;
+            var yen = dollars / 130;
+            document.write(dollars + " dollars = " + yen + " Yen");
+        }
+        
+        function Euro() {
+            var dollars = document.getElementById("amount").value;
+            var euro = dollars * 20 / 19;
+            document.write(dollars + " dollars = " + euro + " Euros");
+        }
+        
+        function Pound() {
+            var dollars = document.getElementById("amount").value;
+            var pound = dollars / 0.82;
+            document.write(dollars + " dollars = " + pound + " Pounds")
+        }
+    </script>
+     
+    
+     <button id="inr" onclick="Inr()">INR(Indian Repee)</button>
+     <br><br>
+     <button id="yen" onclick="Yen()">Yen(Japanese Yen)</button>
+     <br><br>
+     <button id="euro" onclick="Euro()">Euro</button>
+     <br><br>
+     <button id="pound" onclick="Pound()">Pound Sterling</button>
+     <br><br>
+
+</body>
+</html>

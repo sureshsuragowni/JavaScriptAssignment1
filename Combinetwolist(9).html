@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>combines two list by alternatively taking elements of [a,b,c]&[1,2,3] is :</p>
+   <script>
+        let a=['a','b','c'];
+        let b=[1,2,3];
+
+        var newList=function(a,b)
+        {
+            let l=a.length+b.length;
+            let r=[];
+            let j=0,k=0;
+            for(let i=0;i<l;i++){
+                if(i%2==0){
+                    r[i]=a[j++];
+                }
+                else{
+                    r[i]=b[k++];
+                }
+            }
+            return r;
+        }
+        document.write(newList(a,b));
+   </script> 
+</body>
+</html>

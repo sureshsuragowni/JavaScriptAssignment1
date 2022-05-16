@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeapYear</title>
+</head>
+<body>
+   <script>
+       var yearcount = 0;
+       var currentYear = prompt("Enter year"); 
+
+         function leapYears()  
+
+         {
+            while (yearcount < 20)
+            { 
+              if ((currentYear % 4 === 0) && (!((currentYear % 100===0) && (currentYear % 400 !== 0))))
+              {
+            
+                document.write(currentYear + "<br>");
+                yearcount++;
+                currentYear++;
+              }
+                else
+                 {
+                  currentYear++;
+                 }
+            }       
+          }
+           leapYears();
+
+
+    </script> 
+</body>
+</html>

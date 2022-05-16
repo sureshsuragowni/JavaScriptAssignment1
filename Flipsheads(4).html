@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function FlipsHead() {
+    var flips = document.getElementById("inputnum4").value;
+    var heads = Math.floor((Math.random() * flips) + 1);
+    var headRatio = heads / flips;
+    console.log(" Headratio : " + headRatio.toFixed(2));
+    alert("Heads ratio is :" + headRatio.toFixed(2));
+}
+
+        </script>
+        <input id="inputnum4" placeholder="Type number of Flips">
+        <button onclick="FlipsHead()" id="btn4">Click Me</button>
+        <br><br>
+</body>
+</html>

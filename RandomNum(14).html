@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click Here whatever You want!</p>
+    <script>
+        function LargeSmall() {
+    var Myarray = new Array;
+    var k = 0;
+    for (i = 0; i < 100; i++) {
+        var randNum = Math.floor((Math.random() * 10000) + 1);
+        Myarray[k] = randNum;
+        k++;
+    }
+    const max = Math.max(...Myarray);
+    
+    document.write("max num is : " + max);
+}
+
+function HighCount() {
+    var Myarray = new Array;
+    var k = 0;
+    for (i = 0; i < 100; i++) {
+        var randNum = Math.floor((Math.random() * 10000) + 1); 
+        Myarray[k] = randNum;
+        k++;
+    }
+    var evenCount = 0;
+    var oddCount = 0;
+    var n = 0, m = 1;
+    while (n < 100) {
+        oddCount += Myarray[n]
+        n = n + 2;
+    }
+    while (m < 100) {
+        evenCount += Myarray[m]
+        m = m + 2;
+    }
+    if (evenCount > oddCount) {
+        document.write("Even count is higher and it is : " + evenCount);
+    }
+    else {
+        cument.write("Odd count is higher and it is : " + oddCount);
+    }
+}
+        </script>
+        <button id="btn9" onclick="LargeSmall()">Largest&Smallest</button>
+        <button id="btn10" onclick="HighCount()">High Count</button>
+        <br><br>
+</body>
+</html>

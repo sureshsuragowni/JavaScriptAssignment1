@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>click here to see the BubbleSort Values</p>
+    <script>
+        
+function BubbleSort()
+ {
+    const inputArr = [22, 54, 6, 43, 56, 55, 55, 9, 99, 11, 2, 30, 7, 44, 23, 14, 9, 11, 10, 76]
+
+    let len = 20;
+    for (let i = 0; i < len; i++)
+     {    
+        for (let j = 0; j < len; j++)
+         {     
+            if (inputArr[j] > inputArr[j + 1])
+             {
+                let tmp = inputArr[j];
+                inputArr[j] = inputArr[j + 1];
+                inputArr[j + 1] = tmp;
+            }
+        }
+    }
+    console.log(inputArr);
+    document.write(inputArr);
+   
+
+}
+
+    </script>
+ <button id="btn11" onclick="BubbleSort()">Bubble_Sort</button>
+ <br><br>
+</body>
+</html>
